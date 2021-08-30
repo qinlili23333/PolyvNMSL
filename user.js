@@ -16,9 +16,9 @@
       (function(getAttribute) {
 Element.prototype.getAttribute=function(name){
 if(name.indexOf("idm_id")>0){
-    url= "fuckyounmsl";
+    name= "fuckyounmsl";
                }
-        getAttribute.call(this,  name);
+       return getAttribute.call(this,  name);
     };
 
 })(Element.prototype.getAttribute);
